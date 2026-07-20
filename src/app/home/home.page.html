@@ -1,322 +1,229 @@
-<ion-content [fullscreen]="true" class="steep-content">
-  <div class="page-shell">
+<ion-content [fullscreen]="true" class="steep-content" [scrollEvents]="true" (ionScroll)="onPageScroll($event)">
+  <main class="page-shell" [style.--scroll-progress]="scrollProgress" [style.--morph-progress]="morphProgress">
     <nav class="topbar">
       <div class="wrap topbar-inner">
-        <div class="logo">THE <span>ROF</span> NETWORK</div>
-        <ul class="nav-links">
-          <li><a href="#product">Product</a></li>
-          <li><a href="#system">System</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-        </ul>
-        <div class="topbar-actions">
-          <a href="#audit" class="text-link">Book free audit</a>
-          <a href="#audit" class="pill pill-filled">Get started</a>
+        <a class="logo" href="./" aria-label="The ROF Network home">
+          <span class="logo-mark">TRN.</span>
+          <span>THE ROF NETWORK</span>
+        </a>
+        <div class="nav-links">
+          <a href="#system">System</a>
+          <a href="#results">Results</a>
+          <a href="#pricing">Pricing</a>
         </div>
+        <a href="#audit" class="button button-dark">Book free audit <span>↗</span></a>
       </div>
+      <div class="scroll-line"><span></span></div>
     </nav>
 
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow reveal">EST. 2025 · JOHANNESBURG, SOUTH AFRICA</div>
-          <h1 class="display reveal">
-            AI analytics for faster
-            <span class="accent">insights and zero chaos</span>
+    <section class="morph-journey">
+      <div class="morph-sticky">
+        <div class="ambient ambient-a"></div>
+        <div class="ambient ambient-b"></div>
+
+        <div class="hero-copy wrap">
+          <div class="eyebrow">THE ROF NETWORK · GROWTH INFRASTRUCTURE</div>
+          <h1>
+            Build a pipeline that turns
+            <em>attention into revenue.</em>
           </h1>
-          <p class="subhead reveal">
-            The ROF Growth System turns scattered marketing, sales follow-up, and reporting into one
-            editorial product: clear signals, one shared source of truth, and a repeatable sprint cadence.
-          </p>
-          <div class="hero-cta reveal">
-            <a href="#audit" class="pill pill-filled">Get started</a>
-            <a href="#dashboard" class="pill pill-ghost">Book a demo</a>
-          </div>
-        </div>
-
-        <div class="hero-artboard reveal">
-          <article class="artifact artifact-table">
-            <div class="artifact-head">
-              <span>Home</span>
-              <span class="artifact-badge">Edit</span>
-            </div>
-            <div class="greeting">Good morning Alex! ☀</div>
-            <div class="composer-shell hero-composer">
-              <span class="composer-placeholder">What’s the impact on subscriptions from the big launch this month?</span>
-              <button type="button" aria-label="Send" class="composer-send">↑</button>
-            </div>
-            <div class="composer-meta">
-              <span>@</span>
-              <span>○</span>
-            </div>
-            <div class="avatar avatar-af">AF</div>
-          </article>
-
-          <article class="artifact artifact-chart">
-            <div class="artifact-head">
-              <span>New users</span>
-              <span class="artifact-note">3 503</span>
-            </div>
-            <div class="dashboard-card dashboard-card-blue">
-              <div class="dashboard-card-head">
-                <strong>Region</strong>
-                <span>Europe</span>
-              </div>
-              <div class="bar-chart">
-                <span *ngFor="let height of heroBars" [style.height.%]="height"></span>
-              </div>
-            </div>
-          </article>
-
-          <article class="artifact artifact-composer">
-            <div class="artifact-head">
-              <span>Registrations</span>
-              <span class="artifact-note">75% of target</span>
-            </div>
-            <div class="dashboard-card dashboard-card-peach dashboard-card-registers">
-              <div class="ring-copy">
-                <strong>2.4k</strong>
-                <span>↑ 5.5% vs last week</span>
-              </div>
-              <div class="ring">75%</div>
-            </div>
-          </article>
-
-          <article class="artifact artifact-stat">
-            <div class="artifact-head">
-              <span>Activation</span>
-              <span class="artifact-note">46.2%</span>
-            </div>
-            <div class="dashboard-card dashboard-card-soft">
-              <div class="activation-canvas">
-                <span class="activation-dot activation-dot-a"></span>
-                <span class="activation-dot activation-dot-b"></span>
-                <span class="activation-dot activation-dot-c"></span>
-                <span class="activation-dot activation-dot-d"></span>
-                <span class="activation-dot activation-dot-e"></span>
-                <span class="activation-line"></span>
-              </div>
-              <div class="avatar avatar-jb">JB</div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="dashboard" class="dashboard-stage section-fog" [class.in-view]="dashboardInView">
-      <div class="wrap dashboard-stage-inner">
-        <div class="section-head reveal">
-          <span class="tag-eyebrow">LIVE DASHBOARD</span>
-          <h2>The artboards collapse into a single dashboard</h2>
           <p>
-            As you scroll, the floating cards settle into a product view: one shared workspace, one clear signal,
-            and the same surfaces reorganized for execution.
+            The ROF Growth System combines customer intelligence, precision media, offer architecture,
+            conversion funnels, CRM automation and real-time optimisation in one six-step engine.
           </p>
-        </div>
-
-        <div class="dashboard-grid reveal">
-          <article class="dashboard-panel dashboard-panel-large">
-            <div class="dashboard-panel-title">Home</div>
-            <div class="dashboard-panel-greeting">Good morning Alex! ☀</div>
-            <div class="dashboard-input-card">
-              <div class="dashboard-input-copy">What’s the impact on subscriptions from the big launch this month?</div>
-              <div class="dashboard-input-row">
-                <span>@</span>
-                <span>○</span>
-                <div class="avatar avatar-af sm">AF</div>
-                <button type="button" aria-label="Send" class="composer-send">↑</button>
-              </div>
-            </div>
-            <div class="dashboard-underlay">
-              <div class="dashboard-sidecard dashboard-card-blue">
-                <div class="card-title">New users</div>
-                <div class="card-value">3 503</div>
-                <div class="mini-bars">
-                    <span *ngFor="let height of heroBars" [style.height.%]="height"></span>
-                </div>
-              </div>
-              <div class="dashboard-sidecard dashboard-card-peach">
-                <div class="card-title">Registrations</div>
-                <div class="card-value small">2.4k</div>
-                <div class="ring">75%</div>
-              </div>
-              <div class="dashboard-sidecard dashboard-card-soft">
-                <div class="card-title">Activation</div>
-                <div class="card-value small">46.2%</div>
-                <div class="mini-chart">
-                  <span></span><span></span><span></span><span></span>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="product" class="section section-fog">
-      <div class="wrap">
-        <div class="section-head reveal">
-          <span class="tag-eyebrow">BUILT LIKE A PRODUCT</span>
-          <h2>Launch content pulled from your working documents</h2>
-          <p>
-            This section now reflects the Pre-Launch Readiness Plan and the ROF system forms: digital presence,
-            operations, and sales assets that must exist before outreach goes live.
-          </p>
-        </div>
-
-        <div class="pillar-grid">
-          <article class="pillar-card reveal" *ngFor="let pillar of pillars">
-            <div class="pillar-label">{{ pillar.label }}</div>
-            <h3>{{ pillar.title }}</h3>
-            <p>{{ pillar.copy }}</p>
-            <a [href]="pillar.href" class="text-link">{{ pillar.link }} →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="system" class="section">
-      <div class="wrap system-grid">
-        <div class="system-copy">
-          <div class="section-head reveal left-align">
-            <span class="tag-eyebrow">LAUNCH CHECKLIST</span>
-            <h2>Critical pre-launch items from the readiness DOCX</h2>
-            <p>
-              These are the outreach-blocking tasks explicitly called out as critical before launch day.
-            </p>
+          <div class="hero-actions">
+            <a href="#audit" class="button button-dark">Get your missed revenue audit <span>↗</span></a>
+            <a href="#system" class="button button-light">Explore the system</a>
           </div>
+        </div>
 
-          <div class="step-list">
-            <div class="step-row reveal" *ngFor="let item of launchChecklist; let i = index">
-              <div class="step-num">{{ (i + 1).toString().padStart(2, '0') }}</div>
-              <div class="step-body">
-                <h3>{{ item.item }}</h3>
-                <p>{{ item.why }}</p>
-                <p class="step-owner">Owner: {{ item.owner }}</p>
+        <div class="dashboard-frame" aria-label="Animated ROF Growth dashboard preview">
+          <div class="dashboard-toolbar">
+            <div class="toolbar-brand"><span class="logo-mark">TRN.</span> Growth command centre</div>
+            <div class="toolbar-tabs"><span class="active">Overview</span><span>Funnel</span><span>Sales</span><span>ROI</span></div>
+            <div class="live-pill"><i></i> Live</div>
+          </div>
+          <div class="dashboard-body">
+            <aside class="dashboard-sidebar">
+              <span class="active">⌂</span><span>◎</span><span>⌁</span><span>◫</span><span>⚙</span>
+            </aside>
+            <div class="dashboard-canvas">
+              <div class="dashboard-intro">
+                <div><small>GOOD MORNING</small><h3>Your growth system is improving.</h3></div>
+                <button>Last 90 days⌄</button>
+              </div>
+              <div class="dashboard-slots">
+                <div class="slot slot-leads"></div>
+                <div class="slot slot-funnel"></div>
+                <div class="slot slot-roas"></div>
+                <div class="slot slot-signal"></div>
               </div>
             </div>
           </div>
         </div>
 
-        <aside class="system-aside reveal">
-          <div class="aside-card">
-            <div class="aside-head">
-              <div>
-                <div class="aside-label">Live sprint review</div>
-                <div class="aside-title">Every campaign, one clear signal</div>
-              </div>
-              <span class="aside-live"><span class="dot"></span> LIVE</span>
-            </div>
+        <article class="artboard artboard-leads">
+          <div class="card-kicker">Qualified leads</div>
+          <div class="metric-line"><strong>50</strong><span>+100%</span></div>
+          <div class="bar-chart"><i *ngFor="let bar of leadBars" [style.height.%]="bar"></i></div>
+          <div class="card-footer"><span>25 → 50</span><span>90-day sprint</span></div>
+        </article>
 
-            <div class="aside-metrics">
-              <div class="mini-metric" *ngFor="let m of metrics">
-                <span>{{ m.label }}</span>
-                <strong>{{ formatMetric(m) }}</strong>
-              </div>
-            </div>
+        <article class="artboard artboard-funnel">
+          <div class="card-kicker">Sales funnel</div>
+          <h3>Visitor → qualified lead</h3>
+          <div class="funnel-flow"><span>Ad</span><b>→</b><span>Page</span><b>→</b><span>Qualify</span><b>→</b><span>CRM</span></div>
+          <div class="progress-track"><i></i></div>
+          <div class="card-footer"><span>5–10% target</span><span>One path</span></div>
+        </article>
 
-            <div class="aside-list">
-              <div class="aside-row" *ngFor="let l of trafficLights">
-                <span class="signal" [class.green]="l.state === 'green'"
-                      [class.amber]="l.state === 'amber'"
-                      [class.red]="l.state === 'red'"></span>
-                <span>{{ l.label }}</span>
-              </div>
-            </div>
-          </div>
-        </aside>
+        <article class="artboard artboard-roas">
+          <div class="card-kicker">Revenue on ad spend</div>
+          <div class="metric-line"><strong>13.33×</strong><span>+123%</span></div>
+          <svg class="line-chart" viewBox="0 0 300 105" role="img" aria-label="ROAS trend increasing">
+            <path class="line-glow" d="M6 91 C42 86,49 72,79 75 S127 49,154 57 S205 35,225 39 S261 15,294 10"></path>
+            <path class="line-main" d="M6 91 C42 86,49 72,79 75 S127 49,154 57 S205 35,225 39 S261 15,294 10"></path>
+          </svg>
+          <div class="card-footer"><span>5.97× baseline</span><span>Winning</span></div>
+        </article>
+
+        <article class="artboard artboard-signal">
+          <div class="card-kicker">Traffic light machine</div>
+          <div class="signal-row"><i class="green"></i><span>Ad CTR</span><strong>1.5%</strong></div>
+          <div class="signal-row"><i class="amber"></i><span>Landing page</span><strong>7.15%</strong></div>
+          <div class="signal-row"><i class="red"></i><span>Sales close</span><strong>Fix next</strong></div>
+          <div class="pulse-note">One bottleneck. One sprint. One measurable improvement.</div>
+        </article>
+
+        <div class="scroll-cue"><span>Scroll to assemble the system</span><i></i></div>
       </div>
     </section>
+    
 
-    <section id="assets" class="section section-fog">
+    <section class="section system-section">
       <div class="wrap">
-        <div class="section-head reveal">
-          <span class="tag-eyebrow">SOURCE DOCUMENTS</span>
-          <h2>Forms and decks used to populate this page</h2>
-          <p>
-            Content references are taken from your docs folder: product deck, pricing sheet, and core intake forms.
-          </p>
+        <div class="section-heading reveal">
+          <div class="eyebrow">THE SIX-STEP LOGIC</div>
+          <h2>One connected system.<br><em>Six compounding moves.</em></h2>
+          <p>Each step produces the inputs for the next, so targeting, messaging, conversion and sales execution stay aligned.</p>
         </div>
 
-        <div class="assets-grid">
-          <article class="asset-card reveal" *ngFor="let asset of formAssets">
-            <h3>{{ asset.title }}</h3>
-            <p>{{ asset.purpose }}</p>
-            <div class="asset-file">{{ asset.file }}</div>
+        <div class="steps-grid">
+          <article class="step-card reveal" *ngFor="let step of steps; let i = index" [style.--delay]="i * 70 + 'ms'">
+            <div class="step-top"><span>{{ step.num }}</span><i>{{ step.icon }}</i></div>
+            <h3>{{ step.title }}</h3>
+            <p>{{ step.copy }}</p>
+            <div class="step-output"><small>OUTPUT</small><strong>{{ step.output }}</strong></div>
+            <div class="step-arrow">↗</div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-fog">
-      <div class="wrap quote-wrap reveal">
-        <div class="accent-card">
-          <div class="quote-label">Customer story</div>
-          <p class="quote">
-            “Ad CTR went from 0.7% to 1.5%, leads doubled, and we closed our first 8 sales in a single
-            90-day sprint at 0% cost increase.”
-          </p>
-          <div class="attr">Worked example from a ROF Growth System optimisation sprint</div>
+    <section class="section problem-section">
+      <div class="wrap problem-grid">
+        <div class="section-heading left reveal">
+          <div class="eyebrow">WHY THE SYSTEM EXISTS</div>
+          <h2>Busy is not the same as <em>predictable.</em></h2>
+          <p>Disconnected marketing leaves teams chasing the wrong prospects, losing attribution and repeating the same mistakes.</p>
+          <a href="#audit" class="text-arrow">Find your revenue leaks <span>↗</span></a>
+        </div>
+        <div class="problem-list">
+          <article class="problem-row reveal" *ngFor="let problem of problems; let i = index">
+            <span>{{ (i + 1).toString().padStart(2, '0') }}</span>
+            <div><h3>{{ problem.label }}</h3><p>{{ problem.copy }}</p></div>
+            <i>→</i>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="pricing" class="section">
+    <section class="section results-section">
       <div class="wrap">
-        <div class="section-head reveal">
-          <span class="tag-eyebrow">PRICING</span>
-          <h2>Every package includes the full 6-step build</h2>
-          <p>Pricing aligned to your readiness notes: once-off setup fee of R20,000 plus monthly retainer tiers.</p>
+        <div class="section-heading reveal">
+          <div class="eyebrow">THE 90-DAY OPTIMISATION LOOP</div>
+          <h2>Same spend. <em>Better machine.</em></h2>
+          <p>The Traffic Light System isolates the biggest bottleneck and improves one variable at a time.</p>
         </div>
+        <div class="results-dashboard reveal">
+          <div class="results-head"><span>RED MACHINE · DAY 1–90</span><span>GREEN MACHINE · DAY 91–180</span></div>
+          <div class="result-metrics">
+            <div *ngFor="let result of results">
+              <small>{{ result.label }}</small>
+              <div class="compare"><span>{{ result.before }}</span><b>→</b><strong>{{ result.after }}</strong></div>
+              <i [style.--width]="result.width + '%' "><em></em></i>
+            </div>
+          </div>
+          <div class="results-callout"><span>ROI uplift</span><strong>+123%</strong><p>From 5.97× to 13.33× in the worked 90-day sprint example.</p></div>
+        </div>
+      </div>
+    </section>
 
+    <section class="section pricing-section">
+      <div class="wrap">
+        <div class="section-heading reveal">
+          <div class="eyebrow">PACKAGES</div>
+          <h2>Choose your level of <em>growth support.</em></h2>
+          <p>Every tier includes the full six-step system build and a R20,000 once-off setup fee.</p>
+        </div>
         <div class="pricing-grid">
-          <div class="price-card reveal"
-               *ngFor="let tier of pricing"
-               [class.accent-orange]="tier.accent === 'orange'">
-            <div class="price-head">
-              <div class="price-name">{{ tier.name }}</div>
-              <div class="price-tagline">{{ tier.tagline }}</div>
-            </div>
-            <div class="price-amount">{{ tier.price }}<span>/month</span></div>
-            <div class="price-setup">+ R20,000 once-off setup</div>
-            <ul class="price-features">
-              <li *ngFor="let f of tier.features" [class.excluded]="!f.included">
-                <span class="check" *ngIf="f.included">&#10003;</span>
-                <span class="dash" *ngIf="!f.included">&mdash;</span>
-                {{ f.text }}
-              </li>
-            </ul>
-            <div class="price-bestfor"><strong>Best for:</strong> {{ tier.bestFor }}</div>
-          </div>
+          <article class="price-card reveal" *ngFor="let tier of pricing" [class.featured]="tier.featured">
+            <div class="price-badge" *ngIf="tier.featured">MOST POPULAR</div>
+            <div class="price-head"><h3>{{ tier.name }}</h3><p>{{ tier.tagline }}</p></div>
+            <div class="price"><strong>{{ tier.price }}</strong><span>/ month</span></div>
+            <div class="setup">+ R20,000 once-off setup</div>
+            <ul><li *ngFor="let feature of tier.features"><span>✓</span>{{ feature }}</li></ul>
+            <div class="best-for"><small>BEST FOR</small><p>{{ tier.bestFor }}</p></div>
+            <a href="#audit" class="button" [class.button-dark]="!tier.featured" [class.button-orange]="tier.featured">Choose {{ tier.name }} <span>↗</span></a>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="audit" class="section cta-section">
-      <div class="wrap reveal">
-        <span class="tag-eyebrow">HOW WE START</span>
-        <h2>The Missed Revenue Audit</h2>
-        <p class="cta-copy">
-          Before we build anything, we run a free audit on your current marketing and sales setup and map the
-          six places revenue is leaking.
-        </p>
-        <div class="cta-buttons">
-          <a href="mailto:therofnetwork@gmail.com" class="pill pill-filled">Book a discovery call</a>
-          <a href="#product" class="pill pill-ghost">Review the layout</a>
+    <section class="section forms-section">
+      <div class="wrap">
+        <div class="section-heading reveal">
+          <div class="eyebrow">FORMS</div>
+          <h2>Use the <em>intake system.</em></h2>
+          <p>These client-facing forms support the launch workflow from persona definition to channel selection and funnel planning.</p>
         </div>
-        <p class="cta-fineprint">therofnetwork&#64;gmail.com · “The idea is to build something real.”</p>
+        <div class="forms-grid">
+          <article class="form-card reveal" *ngFor="let form of forms">
+            <div class="form-top">
+              <span>{{ form.label }}</span>
+              <i>↗</i>
+            </div>
+            <h3>{{ form.title }}</h3>
+            <p>{{ form.copy }}</p>
+            <a [href]="form.file" target="_blank" rel="noopener" class="text-arrow">Open PDF <span>↗</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="audit-section">
+      <div class="wrap audit-grid">
+        <div class="audit-copy reveal">
+          <div class="eyebrow">HOW WE START</div>
+          <h2>The Missed<br><em>Revenue Audit.</em></h2>
+          <p>We map the six places where revenue is leaking, identify the highest-impact opportunity and show how the Growth System applies to your business before you commit.</p>
+          <a href="mailto:therofnetwork@gmail.com" class="button button-orange">Book a free 20-minute call <span>↗</span></a>
+        </div>
+        <div class="audit-visual reveal">
+          <div class="orbit orbit-1"></div><div class="orbit orbit-2"></div><div class="orbit orbit-3"></div>
+          <div class="audit-core"><span>6</span><small>REVENUE<br>LEAKS</small></div>
+          <div class="orbit-label label-1">Persona</div><div class="orbit-label label-2">Platform</div><div class="orbit-label label-3">Offer</div>
+          <div class="orbit-label label-4">Funnel</div><div class="orbit-label label-5">Sales</div><div class="orbit-label label-6">Optimise</div>
+        </div>
       </div>
     </section>
 
     <footer>
       <div class="wrap footer-inner">
-        <div class="logo">THE <span>ROF</span> NETWORK</div>
-        <ul class="footer-links">
-          <li><a href="#product">Product</a></li>
-          <li><a href="#system">System</a></li>
-          <li><a href="#audit">Book a call</a></li>
-        </ul>
-        <div class="copyright">&copy; 2026 The ROF Network · Johannesburg, South Africa</div>
+        <div class="logo"><span class="logo-mark">TRN.</span><span>THE ROF NETWORK</span></div>
+        <p>“The idea is to build something real.”</p>
+        <div><a href="mailto:therofnetwork@gmail.com">therofnetwork@gmail.com</a><span>Johannesburg, South Africa</span></div>
       </div>
     </footer>
-  </div>
+  </main>
 </ion-content>
