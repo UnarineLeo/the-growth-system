@@ -1,0 +1,454 @@
+
+TRN.
+THE ROF NETWORK
+─────────────────────────────────────
+PRE-LAUNCH READINESS PLAN
+THE ROF GROWTH SYSTEM — Launch Readiness
+Monday 22 June 2026 · 4 Working Days
+4
+WORKING DAYS
+3
+TEAM MEMBERS
+22 JUN
+OUTREACH STARTS
+
+WHO: Founder (Marketing) · Web Person · Marketing Assistant
+PRODUCT: The ROF Growth System — 6-Step B2B Lead Generation
+FIRST CLIENT: Aeversa (SA Electric Fleet) — Pilot / Free
+
+CRITICAL — Must be done before Monday 22 June
+NICE TO HAVE — Can follow in Week 1 after launch
+
+How to Use This Plan
+This checklist covers everything TRN needs to complete internally before Monday 22 June outreach begins. Items are sorted by category and flagged CRITICAL or NICE TO HAVE. Be ruthless — if it isn't CRITICAL, park it for Week 1 and focus.
+SHORTCUT PRINCIPLE: A one-page Carrd.co site live on Friday beats a polished Squarespace that isn't ready by Monday. A Google Doc service agreement beats nothing. A shared Notion board beats no CRM. Ship the minimum version — you can upgrade everything in Week 1 while outreach is running.
+
+01 — DIGITAL PRESENCE
+
+What needs to exist online before a prospect Googles you.
+ITEM
+WHAT IT IS
+WHY NEEDED BEFORE OUTREACH
+TIME
+WHO
+PRIORITY
+☐  One-page website (Carrd)
+Single-page site: TRN name, tagline, brief about The ROF Growth System, 3 pricing tier names (no figures), contact CTA. No long copy needed.
+Every prospect will Google you before replying. A blank domain or no site = instant credibility loss. Carrd deploys in 2-3 hrs vs. 2-3 days on Squarespace.
+3–4 hrs
+Web
+CRITICAL
+☐  Custom domain connected
+Connect therof.co.za (or theroofnetwork.co.za) to the Carrd site. Confirm DNS propagates. Use a professional email on same domain.
+Outreach emails from @gmail or @yahoo kill trust instantly. Domain email is non-negotiable for B2B.
+1–2 hrs
+Web
+CRITICAL
+☐  Founder LinkedIn profile — launch-ready
+Professional headshot, updated headline ("Founder, THE ROF NETWORK | B2B Lead Generation for SA Tech Companies"), featured section with ROF Growth System PDF link.
+LinkedIn is the primary outreach channel. Aeversa and all 5 prospects will check your profile before responding. A weak profile = no reply.
+1.5 hrs
+Founder
+CRITICAL
+☐  TRN Company LinkedIn page
+Create company page: logo, banner (Canva), tagline, website link, 1 description paragraph. No posting required yet.
+Prospects check the company page to verify legitimacy. An empty or missing page is a red flag.
+1 hr
+Founder
+CRITICAL
+☐  Professional email address
+Set up yourname@therof.co.za (or equivalent domain). Use Google Workspace (R150/month) or Zoho Mail (free). Forward to personal if needed.
+All outreach emails, proposals, and contracts must come from a branded domain address. Without this, you cannot send credible B2B emails.
+1 hr
+Founder
+CRITICAL
+☐  Google Business Profile
+Claim/create Google Business listing for THE ROF NETWORK. Category: Marketing Agency. Add website, phone, description.
+Adds legitimacy in search results. Takes 10 minutes to create (may take days to verify, but listing appears immediately).
+30 min
+Assistant
+NICE TO HAVE
+☐  Basic SEMrush site audit
+Run SEMrush free trial on your own domain once live. Note any technical issues on the Carrd site.
+Useful to demonstrate SEO competence to clients, but not urgent before outreach starts.
+1 hr
+Web
+NICE TO HAVE
+☐  Canva brand kit set up
+Upload TRN logo, set brand colours (#F05A00, #F0EDE8, #1A1A1A) and fonts in Canva. All team members access same brand kit.
+Ensures all outreach assets, decks, and posts look consistent. Needed before creating any visual materials.
+45 min
+Web
+CRITICAL
+
+02 — INTERNAL OPERATIONS
+
+CRM, contracts, invoicing, communication infrastructure — the engine behind every client interaction.
+ITEM
+WHAT IT IS
+WHY NEEDED BEFORE OUTREACH
+TIME
+WHO
+PRIORITY
+☐  CRM — prospect pipeline set up
+Use a free CRM: HubSpot Free, Notion board, or even a Google Sheet with columns: Company | Contact | Status | Last Touch | Next Step | Notes. Aeversa + 5 prospects added.
+Without a structured tracker, outreach becomes chaotic by Day 2. You need to log every touchpoint from Monday. Notion or Google Sheets works perfectly at this stage.
+1.5 hrs
+Assistant
+CRITICAL
+☐  Client service agreement (template)
+One-page Google Doc or Word contract covering: scope of services, payment terms (setup fee + retainer), IP ownership, 30-day notice clause, confidentiality. Have a lawyer review later.
+Aeversa is a free/pilot client, but you still need a signed document to protect both parties and establish professionalism. Without it, the relationship has no legal foundation.
+2–3 hrs
+Founder
+CRITICAL
+☐  Invoice template
+Create a branded invoice in Canva or Google Docs. Include: TRN name, bank details, VAT status (if registered), line items for setup fee and retainer tiers.
+You'll need to invoice Aeversa once the pilot converts to paid. Having the template ready avoids delay at the critical conversion moment.
+1 hr
+Assistant
+CRITICAL
+☐  WhatsApp Business account — active
+Set up WhatsApp Business (free) with TRN profile: business name, description, logo, website link, automated greeting message. Use a dedicated SIM or second number.
+SA B2B buyers respond faster on WhatsApp than email. Several prospects may request WhatsApp follow-ups after initial LinkedIn/email contact.
+45 min
+Founder
+CRITICAL
+☐  Shared team workspace
+Create a Notion workspace or shared Google Drive folder structure: /Assets, /Clients/Aeversa, /Clients/Prospects, /Internal/SOPs, /Templates. All three team members invited.
+Without a shared workspace, files get lost in DMs and email threads. The assistant and web person need access to assets and briefs from Day 1.
+1 hr
+Assistant
+CRITICAL
+☐  Proposal/onboarding workflow documented
+Write a 1-page SOP: what happens after a prospect says yes? Steps: signed agreement → intake forms sent → onboarding call booked → kick-off. Map it before outreach so you're not winging it.
+If Aeversa or a prospect converts immediately, you need to know the exact next steps. Improvising onboarding erodes first impressions.
+1.5 hrs
+Founder
+CRITICAL
+☐  Business bank account or payment method
+Confirm a dedicated business account is open and active for receiving client payments (EFT). Note banking details for invoice template.
+Needed the moment any client agrees to pay. Personal accounts look unprofessional and complicate bookkeeping.
+1 hr
+Founder
+CRITICAL
+☐  Google Looker Studio dashboard template
+Build a basic reporting dashboard in Looker Studio: traffic (GA4), ad performance (Google Ads), lead count. Blank template is enough for now.
+Demonstrates the ROI-reporting capability of the ROF Growth System during sales conversations. Shows prospects what they'll see monthly.
+2–3 hrs
+Web
+NICE TO HAVE
+☐  Email signature set up
+Professional email signature: name, title, TRN logo (small), phone, email, website, LinkedIn URL. All team members.
+Every email carries the signature. Without it, your outreach looks like a cold spam blast rather than an agency communication.
+30 min
+All
+CRITICAL
+
+03 — SALES ASSETS
+
+What you send or show a prospect during or after first contact. These are your conversion tools.
+ITEM
+WHAT IT IS
+WHY NEEDED BEFORE OUTREACH
+TIME
+WHO
+PRIORITY
+☐  One-page pitch deck / capabilities overview
+A 4–6 slide Canva PDF: (1) Problem we solve, (2) The ROF Growth System overview (6 steps), (3) Who it's for (SA B2B SMEs), (4) How it works (process), (5) Pricing tiers, (6) Next steps CTA. Not a masterpiece — functional.
+After a LinkedIn DM reply, the prospect will ask "tell me more." You need something to send in the next 10 minutes. The existing ROF Growth System PDF is 12 pages — too long for first contact. A 1-pager gets read; a 12-pager doesn't.
+3–4 hrs
+Founder + Web
+CRITICAL
+☐  Customised Aeversa proposal
+A tailored 2–3 page proposal: their specific challenge (EV fleet lead gen / dealer pipeline), how the 6-step system applies to them, your recommended starting tier, pilot terms (free first 30/60 days), success metrics.
+Aeversa is your first and most important prospect. They need to see that you understand their business, not a generic pitch. This converts the warm relationship into a signed client.
+2–3 hrs
+Founder
+CRITICAL
+☐  Typeform intake form — prospect version
+A short Typeform (5–8 questions) for interested prospects to complete before a discovery call: company size, current lead gen approach, monthly lead target, budget range. Embed link in email signature and website.
+Qualifies prospects before you spend time on a call. Also signals professionalism — agencies with systems impress SME decision-makers who are used to winging it.
+1 hr
+Assistant
+CRITICAL
+☐  Discovery call script / agenda
+A 1-page Google Doc: 30-minute call structure. Opener (5 min), diagnostic questions (10 min), system walkthrough (10 min), next steps (5 min). Based on the 26 intake forms you already have.
+Without a call script, your first discovery call will ramble. The existing intake form questions are perfect diagnostic prompts — convert them into a call flow.
+1.5 hrs
+Founder
+CRITICAL
+☐  Pricing send-able version
+Take the existing 3-page pricing PDF and create a clean, send-ready version: remove any internal notes, ensure R amounts are clearly formatted (R20K setup + Starter/Growth/Scale retiers), add TRN branding. Confirm with founder it's approved to send.
+Prospects will ask "how much?" The existing PDF needs a send-ready sign-off. You cannot send internal drafts to clients.
+45 min
+Assistant
+CRITICAL
+☐  Case study placeholder / social proof asset
+Since you have no paid clients yet, create a 1-page "How It Works" story asset: a hypothetical or anonymised scenario showing how the 6-step system would work for a company like Aeversa. Frame it as "Here is what we'd build for you."
+Prospects ask "who else have you done this for?" You need something that demonstrates competence without fabricating testimonials. A worked example is honest and effective.
+2 hrs
+Founder
+NICE TO HAVE
+☐  Canva social media post templates (LinkedIn)
+3–4 branded Canva templates for LinkedIn posts: text post background, stat/data card, quote card. Sized for LinkedIn (1200×627 and 1080×1080).
+You'll want to post on LinkedIn from Day 1 to build visibility while outreach runs. Templates ensure every post looks branded without designing from scratch each time.
+1.5 hrs
+Web
+NICE TO HAVE
+
+04 — TEAM SETUP
+
+Onboarding the web person and marketing assistant so they can execute from Day 1 without bottlenecking the founder.
+ITEM
+WHAT IT IS
+WHY NEEDED BEFORE OUTREACH
+TIME
+WHO
+PRIORITY
+☐  Team kickoff briefing (1 hour)
+One-hour session (Thu or Fri): cover the product (ROF Growth System), the 3 clients/prospects, each person's role and tasks this week, shared workspace access, communication norms (WhatsApp group for daily standups, Notion for tasks).
+New hires cannot contribute without context. A 1-hour briefing prevents a week of confused back-and-forth. The founder cannot be a bottleneck answering basic questions during outreach week.
+1 hr
+All
+CRITICAL
+☐  Role clarity document (1 pager each)
+For each hire: a 1-page Google Doc with their weekly priorities (this week and next), tools they own, escalation path, what "done" looks like. Not a formal JD — a practical week-1 roadmap.
+Clarity prevents duplication and gaps. If the assistant doesn't know they own the CRM setup, it won't happen. If the web person doesn't know the Carrd deadline is Thursday EOD, they'll miss it.
+1 hr
+Founder
+CRITICAL
+☐  Tool access provisioned
+Confirm all 3 team members have login access to: shared Google Workspace / Drive, Canva (brand kit), Notion workspace, Typeform account, WhatsApp Business, SEMrush trial. Share credentials securely (use a password manager or shared Google Doc in a private folder).
+Nothing kills productivity faster than "I don't have access to that." Provision access before the weekend so Monday morning is not spent on IT.
+1 hr
+Founder
+CRITICAL
+☐  Asset library — shared and organised
+Upload all existing assets to the shared workspace: ROF Growth System PDF, Pricing PDF, QA Framework, 26 intake forms, Aeversa research brief, outreach messages, brand files (logo, colour codes, fonts). Clearly labelled folders.
+Team members need to find the Aeversa brief without asking. The assistant needs the intake forms to build the Typeform. The web person needs the logo for the Carrd site. Organise now, not after things go wrong.
+1.5 hrs
+Assistant
+CRITICAL
+☐  WhatsApp daily standup group created
+Create a WhatsApp group for the 3-person team. Set the expectation: each person posts a 3-line standup by 9am Monday onwards (Done yesterday / Doing today / Blocked on). Keep it brief.
+With a 3-person remote-capable team, daily visibility prevents tasks falling through the cracks during the most critical launch week.
+10 min
+Founder
+CRITICAL
+☐  Internal QA Framework briefed to team
+Walk the team through the 14-page QA Framework so they understand what "quality" means at TRN before they produce any client-facing materials.
+The QA Framework is only useful if the team has read it. Without this, the first client assets may not meet your own standards.
+45 min
+All
+NICE TO HAVE
+
+05 — OUTREACH PREP
+
+Monday morning readiness: every touchpoint planned, every asset loaded, every profile live.
+ITEM
+WHAT IT IS
+WHY NEEDED BEFORE OUTREACH
+TIME
+WHO
+PRIORITY
+☐  Aeversa contact details confirmed
+Verify the correct decision-maker at Aeversa: name, LinkedIn URL, email address, WhatsApp number (if available). Cross-reference the existing research brief to confirm all are still current.
+The outreach messages are ready to send — but only if you're targeting the right person at the right address. A bounced email or DM to the wrong profile wastes the prep work.
+30 min
+Assistant
+CRITICAL
+☐  Top 5 prospect contacts confirmed
+From the SA Tech Prospects PDF (15 companies), select and confirm the top 5 to contact in Week 1. For each: decision-maker name, LinkedIn URL, email, role. Add to CRM.
+You need to know exactly who you're contacting on Monday, not spend Monday morning researching. Pre-select now so the list is ready to execute.
+1.5 hrs
+Assistant
+CRITICAL
+☐  Aeversa outreach messages — final review
+Both messages (LinkedIn DM + Email) already exist. Do a final check: correct name, no broken links, PDF attachment ready, email subject line compelling, LinkedIn DM is under 200 words.
+One small error (wrong name, broken link, wrong file attached) in the first message to your pilot client sets a terrible tone. 15-minute review is worth it.
+15 min
+Founder
+CRITICAL
+☐  Email sequences drafted for top 5
+For each of the 5 prospects: a personalised LinkedIn DM (max 150 words, reference their specific company) + a follow-up email (if no LinkedIn reply in 48 hrs). Pull from the Aeversa templates and adjust per company.
+Personalised outreach converts 3–5x better than copy-paste. With the assistant helping, you can personalise 5 in 2–3 hours using the existing Aeversa messages as a base.
+2–3 hrs
+Founder + Asst
+CRITICAL
+☐  LinkedIn connection requests sent (Fri/Sat)
+Send connection requests to all 6 target contacts (Aeversa + 5 prospects) on Friday or over the weekend. Add a brief personalised note (1 sentence). Do NOT send the full pitch yet.
+LinkedIn takes 24–72 hours for connections to be accepted. Sending requests now means contacts are connected by Monday, and your DM lands in their inbox rather than message requests (lower open rate).
+30 min
+Founder
+CRITICAL
+☐  Outreach schedule (Mon–Wed) mapped
+Create a simple table: Mon 9am — Aeversa LinkedIn DM. Mon 11am — Aeversa email. Mon 2pm — Prospect 1 LinkedIn. Tue: follow-ups + Prospects 2–3. Wed: Prospects 4–5 + Aeversa follow-up if no reply. One activity per time block.
+Without a schedule, outreach becomes reactive and inconsistent. A mapped schedule also lets the assistant track what has been sent and when.
+30 min
+Founder
+CRITICAL
+☐  ROF Growth System PDF — send-ready version confirmed
+Ensure the 12-page PDF is: correctly named (THE-ROF-GROWTH-SYSTEM.pdf), under 5MB for email, no draft watermarks, no internal notes, TRN branded cover.
+This PDF will be sent as a leave-behind after first contact. An incorrectly named or oversized file is embarrassing. A 5-minute check prevents it.
+15 min
+Assistant
+CRITICAL
+☐  Google Ads account set up (ready, not running)
+Create a Google Ads account for TRN. Set up billing. Do NOT launch campaigns yet — just have it ready so you can activate once you have a landing page with conversion tracking.
+Having the account ready means you can activate campaigns in Week 2 without admin delay. Launching ads cold on a new account without any setup wastes budget.
+1 hr
+Web
+NICE TO HAVE
+☐  Crazy Egg trial activated on website
+Activate Crazy Egg free trial on the Carrd site once it's live. Set up a heatmap on the main page.
+Gives you immediate UX data from any prospect who visits the site after receiving outreach. Useful for Week 1 optimisation.
+30 min
+Web
+NICE TO HAVE
+
+Day-by-Day Execution Timeline
+Assign every CRITICAL item to a specific day and person before Thursday ends. If it's not on someone's calendar, it won't happen.
+
+DAY
+FOCUS
+KEY TASKS
+OWNER
+THU 18
+Infrastructure
+Team kickoff (1hr) · Role clarity docs · Tool access provisioned · Shared workspace created · Domain purchased · Professional email set up · Canva brand kit done · Asset library organised
+All three
+FRI 19
+Build Day
+Carrd website live · LinkedIn profiles updated · TRN Company page created · Email signatures · CRM pipeline set up · Pricing PDF send-ready · Invoice template · Service agreement draft · LinkedIn connection requests sent to all 6 targets
+Web · Founder · Asst
+SAT 20
+Sales Assets
+One-page pitch deck (Canva) · Aeversa proposal (personalised) · Top 5 prospect contacts confirmed + added to CRM · Prospect outreach sequences drafted · Onboarding workflow documented
+Founder · Asst
+SUN 21
+Final Review
+Aeversa outreach messages final review · Typeform intake form live · Outreach schedule Mon–Wed mapped · Verify all links/attachments work · Buffer day for anything that slipped
+Founder
+MON 22
+LAUNCH DAY
+9am: Aeversa LinkedIn DM sent · 11am: Aeversa email sent · 2pm: Prospect 1 LinkedIn DM · Log all activity in CRM. Outreach is live.
+Founder
+
+CRITICAL Items — Quick Reference
+Everything below MUST be done before 9am Monday 22 June. If any item is not done, delay outreach only for starred (★) items — the rest can be finished Monday morning.
+
+ITEM
+OWNER
+DAY
+★
+Professional domain email (yourname@therof.co.za)
+Founder
+Thu
+★
+Carrd one-page website live on domain
+Web
+Fri
+★
+Founder LinkedIn profile — launch-ready
+Founder
+Fri
+★
+TRN Company LinkedIn page created
+Founder
+Fri
+☐
+Canva brand kit set up (logo, colours, fonts)
+Web
+Thu
+☐
+Shared workspace created, all team members invited
+Assistant
+Thu
+☐
+Asset library organised in shared workspace
+Assistant
+Thu
+☐
+Role clarity docs for web person and assistant
+Founder
+Thu
+☐
+Tool access provisioned for all 3 team members
+Founder
+Thu
+☐
+WhatsApp Business account active + group chat
+Founder
+Thu/Fri
+☐
+Email signatures on all team members
+All
+Fri
+☐
+CRM pipeline set up with 6 prospects added
+Assistant
+Fri
+☐
+Client service agreement template (Google Doc)
+Founder
+Fri/Sat
+☐
+Invoice template created
+Assistant
+Fri
+☐
+Business bank account confirmed
+Founder
+Thu
+☐
+Pricing PDF — send-ready version confirmed
+Assistant
+Fri
+☐
+ROF Growth System PDF — named, under 5MB, clean
+Assistant
+Fri
+☐
+One-page pitch deck (Canva PDF, 4-6 slides)
+Founder+Web
+Sat
+☐
+Aeversa personalised proposal (2-3 pages)
+Founder
+Sat
+☐
+Typeform prospect intake form live
+Assistant
+Sat/Sun
+☐
+Discovery call script / agenda (1 page)
+Founder
+Sat
+☐
+Top 5 prospect contacts confirmed in CRM
+Assistant
+Sat
+☐
+Outreach sequences drafted for top 5 prospects
+Founder+Asst
+Sat
+☐
+Onboarding workflow documented (1-page SOP)
+Founder
+Sat
+☐
+LinkedIn connections sent to all 6 targets
+Founder
+Fri
+☐
+Aeversa messages final review (15 min)
+Founder
+Sun
+☐
+Outreach schedule Mon-Wed mapped
+Founder
+Sun
+
+★ Starred items are outreach-blockers. Without a live domain email, a website, and an updated LinkedIn profile, sending outreach will actively hurt your credibility. Complete these three first.
+

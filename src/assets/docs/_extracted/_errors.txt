@@ -1,0 +1,5 @@
+pdftotext missing for TRN_PersonaFormula_Form.pdf
+pdftotext missing for TRN_Platform_Form.pdf
+pdftotext missing for TRN_PricingSheet_v2.pdf
+pdftotext missing for TRN_ROFGrowthSystem_Product_v3.pdf
+pdftotext missing for TRN_SalesFunnel_Form.pdf

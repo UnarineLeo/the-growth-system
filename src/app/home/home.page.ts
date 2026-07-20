@@ -23,6 +23,18 @@ interface PricingTier {
   bestFor: string;
 }
 
+interface LaunchItem {
+  item: string;
+  why: string;
+  owner: string;
+}
+
+interface FormAsset {
+  title: string;
+  file: string;
+  purpose: string;
+}
+
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -32,6 +44,106 @@ interface PricingTier {
 })
 export class HomePage implements AfterViewInit, OnDestroy {
   @ViewChild(IonContent) ionContent!: IonContent;
+
+  partners = ['Voi', 'Framer', 'Juni', 'Monta', 'Bounce'];
+
+  heroBars = [54, 68, 60, 77, 66, 53, 44, 59, 55, 67, 61, 78, 64, 52];
+
+  pillars = [
+    {
+      label: 'Digital Presence',
+      title: 'Be launch-ready before outreach',
+      copy: 'From the readiness plan: one-page website on a custom domain, founder profile updated, and a professional domain email before the first message is sent.',
+      link: 'View launch checklist',
+      href: '#system',
+    },
+    {
+      label: 'Internal Operations',
+      title: 'Build the execution engine first',
+      copy: 'CRM, service agreement, invoice template, and team workspace are marked critical so conversion does not stall after first contact.',
+      link: 'See operational assets',
+      href: '#assets',
+    },
+    {
+      label: 'Sales Assets',
+      title: 'Use concise send-ready documents',
+      copy: 'The plan calls for a short capability deck, a cleaned pricing PDF, and a personalised proposal for Aeversa before launch day.',
+      link: 'Review core forms',
+      href: '#pricing',
+    },
+  ];
+
+  launchChecklist: LaunchItem[] = [
+    {
+      item: 'Professional domain email live',
+      why: 'Outreach from generic mail addresses hurts trust instantly in SA B2B.',
+      owner: 'Founder',
+    },
+    {
+      item: 'One-page site on custom domain',
+      why: 'Every prospect will search your brand before replying.',
+      owner: 'Web',
+    },
+    {
+      item: 'Founder and company LinkedIn profiles updated',
+      why: 'LinkedIn is the primary first-touch channel for pilot and prospects.',
+      owner: 'Founder',
+    },
+    {
+      item: 'CRM with Aeversa plus top 5 prospects',
+      why: 'Without a tracker, outreach becomes chaotic by day two.',
+      owner: 'Assistant',
+    },
+    {
+      item: 'Pricing PDF and product PDF send-ready',
+      why: 'Prospects ask for cost and process immediately after first positive reply.',
+      owner: 'Assistant',
+    },
+    {
+      item: 'Outreach schedule mapped Mon-Wed',
+      why: 'Execution cadence prevents reactive follow-up gaps during launch week.',
+      owner: 'Founder',
+    },
+  ];
+
+  formAssets: FormAsset[] = [
+    {
+      title: 'The Persona Formula — Client Intake Form',
+      file: 'TRN_PersonaFormula_Form.pdf',
+      purpose: 'Captures target client profile, pain points, and qualification criteria before campaign planning.',
+    },
+    {
+      title: 'The Platform — Selection and Targeting Brief',
+      file: 'TRN_Platform_Form.pdf',
+      purpose: 'Selects channels and audience strategy across Google, YouTube, Meta, and LinkedIn by awareness level.',
+    },
+    {
+      title: 'The Sales Funnel — Funnel Architecture Brief',
+      file: 'TRN_SalesFunnel_Form.pdf',
+      purpose: 'Defines landing page, qualifier flow, and thank-you sequence for higher conversion intent.',
+    },
+    {
+      title: 'Service Pricing Sheet',
+      file: 'TRN_PricingSheet_v2.pdf',
+      purpose: 'Client-facing pricing reference aligned to setup fee plus monthly retainer tiers.',
+    },
+    {
+      title: 'ROF Growth System Product Deck',
+      file: 'TRN_ROFGrowthSystem_Product_v3.pdf',
+      purpose: 'Explains the full six-step system as a send-after-contact leave-behind document.',
+    },
+    {
+      title: 'Pre-Launch Readiness Plan',
+      file: 'TRN_PreLaunch_Readiness_Plan.docx',
+      purpose: 'Four-day execution checklist covering digital presence, operations, assets, and outreach prep.',
+    },
+  ];
+
+  heroCharts = [
+    { label: 'Qualified leads', value: '50', width: 78 },
+    { label: 'Cost per lead', value: 'R450', width: 42 },
+    { label: 'ROAS', value: '13.33×', width: 88 },
+  ];
 
   // ---- Content, drawn from the ROF Growth System docs ----
   steps: ProcessStep[] = [
@@ -123,7 +235,7 @@ export class HomePage implements AfterViewInit, OnDestroy {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('in');
-            if (entry.target.id === 'dashboard-panel' && !this.dashboardInView) {
+            if (entry.target.id === 'dashboard-stage' && !this.dashboardInView) {
               this.dashboardInView = true;
               this.animateMetrics();
               this.cycleTrafficLights();
@@ -134,6 +246,10 @@ export class HomePage implements AfterViewInit, OnDestroy {
       { threshold: 0.25 }
     );
     revealEls.forEach((el) => this.observer!.observe(el));
+    const dashboardStage = document.querySelector('#dashboard-stage');
+    if (dashboardStage) {
+      this.observer.observe(dashboardStage);
+    }
   }
 
   private animateMetrics() {
