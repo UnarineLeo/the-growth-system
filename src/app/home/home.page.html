@@ -1,20 +1,199 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true" class="rof-content">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <!-- ===== NAV ===== -->
+  <nav class="topbar">
+    <div class="wrap topbar-inner">
+      <div class="logo">THE <span>ROF</span> NETWORK</div>
+      <ul class="nav-links">
+        <li><a href="#system">System</a></li>
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+      <a href="#audit" class="pill pill-filled">Book free audit</a>
+    </div>
+  </nav>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="eyebrow reveal">EST. 2025 &middot; JOHANNESBURG, SOUTH AFRICA</div>
+      <h1 class="display reveal">
+        Attract, Qualify &amp; Convert<br />
+        <span class="accent">High-Value Clients</span> &mdash; Predictably.
+      </h1>
+      <p class="subhead reveal">
+        The ROF GROWTH SYSTEM combines persona intelligence, precision paid media, offer
+        architecture, conversion funnels and a CRM-powered sales engine &mdash; all measured
+        in real time.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#audit" class="pill pill-filled">Book your free Missed Revenue Audit</a>
+        <a href="#system" class="pill pill-ghost">See the 6-step system</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIVE DASHBOARD ===== -->
+  <section id="dashboard" class="bg-charcoal">
+    <div class="wrap">
+      <div class="section-head reveal light-on-dark">
+        <span class="tag-eyebrow">THE OPTIMISATION ENGINE</span>
+        <h2>Every campaign, one live dashboard</h2>
+        <p>The Traffic Light Machine flags the single biggest bottleneck every 90 days &mdash;
+          so you fix one variable at a time, not everything at once.</p>
+      </div>
+
+      <div class="dashboard-panel reveal" id="dashboard-panel">
+        <div class="dash-header">
+          <div class="dash-title">ROF Growth System &middot; Live Campaign Status</div>
+          <div class="dash-live"><span class="dot"></span> LIVE</div>
+        </div>
+
+        <div class="dash-grid">
+          <div class="metric-tile" *ngFor="let m of metrics">
+            <div class="metric-label">{{ m.label }}</div>
+            <div class="metric-value">{{ formatMetric(m) }}</div>
+          </div>
+        </div>
+
+        <div class="traffic-row">
+          <div class="traffic-item" *ngFor="let l of trafficLights">
+            <span class="signal" [class.green]="l.state === 'green'"
+                  [class.amber]="l.state === 'amber'"
+                  [class.red]="l.state === 'red'"></span>
+            <span class="traffic-label">{{ l.label }}</span>
+          </div>
+        </div>
+
+        <div class="bar-compare">
+          <div class="bar-row">
+            <span class="bar-name">Red Machine (Day 1&ndash;90)</span>
+            <div class="bar-track"><div class="bar-fill red" style="width:32%"></div></div>
+            <span class="bar-val">5.97&times; ROI</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-name">Green Machine (Day 91&ndash;180)</span>
+            <div class="bar-track"><div class="bar-fill green" style="width:78%"></div></div>
+            <span class="bar-val">13.33&times; ROI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROBLEM ===== -->
+  <section class="bg-fog">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="tag-eyebrow">THE PROBLEM</span>
+        <h2>Most businesses are leaving revenue on the table</h2>
+        <p>Your sales team is busy. But busy isn&rsquo;t the same as productive. Without a
+          system, growth is unpredictable.</p>
+      </div>
+      <div class="problem-grid">
+        <div class="problem-card reveal" *ngFor="let p of problems">
+          <span class="x-mark">&#10005;</span>
+          <div>
+            <strong>{{ p.label }}</strong>
+            <p>{{ p.copy }}</p>
+          </div>
+        </div>
+      </div>
+      <p class="problem-close reveal">The ROF GROWTH SYSTEM solves all six &mdash; in one integrated system.</p>
+    </div>
+  </section>
+
+  <!-- ===== 6-STEP SYSTEM ===== -->
+  <section id="system">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="tag-eyebrow">THE PRODUCT</span>
+        <h2>The ROF Growth System &mdash; 6 steps</h2>
+        <p>Each step feeds the next. Skip one, and the whole system loses its edge.</p>
+      </div>
+      <div class="step-list">
+        <div class="step-row reveal" *ngFor="let s of steps">
+          <div class="step-num">{{ s.num }}</div>
+          <div class="step-body">
+            <h3>{{ s.title }}</h3>
+            <p>{{ s.copy }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOCIAL PROOF / RESULT ===== -->
+  <section class="bg-fog">
+    <div class="wrap quote-wrap reveal">
+      <div class="accent-card">
+        <p class="quote">&ldquo;Ad CTR went from 0.7% to 1.5%, leads doubled, and we closed
+          our first 8 sales in a single 90-day sprint &mdash; at 0% cost increase.&rdquo;</p>
+        <div class="attr">Worked example from a ROF GROWTH SYSTEM 90-day optimisation sprint</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section id="pricing" class="bg-charcoal">
+    <div class="wrap">
+      <div class="section-head reveal light-on-dark">
+        <span class="tag-eyebrow">SERVICE PRICING</span>
+        <h2>Every package includes the full 6-step build</h2>
+        <p>Once-off setup fee of R20,000 on all tiers &mdash; covers system build, onboarding
+          and tech setup.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="price-card reveal"
+             *ngFor="let tier of pricing"
+             [class.dark]="tier.dark"
+             [class.accent-orange]="tier.accent === 'orange'">
+          <div class="price-head">
+            <div class="price-name">{{ tier.name }}</div>
+            <div class="price-tagline">{{ tier.tagline }}</div>
+          </div>
+          <div class="price-amount">{{ tier.price }}<span>/month</span></div>
+          <div class="price-setup">+ R20,000 once-off setup</div>
+          <ul class="price-features">
+            <li *ngFor="let f of tier.features" [class.excluded]="!f.included">
+              <span class="check" *ngIf="f.included">&#10003;</span>
+              <span class="dash" *ngIf="!f.included">&mdash;</span>
+              {{ f.text }}
+            </li>
+          </ul>
+          <div class="price-bestfor"><strong>Best for:</strong> {{ tier.bestFor }}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA / AUDIT ===== -->
+  <section id="audit" class="cta-section">
+    <div class="wrap reveal">
+      <span class="tag-eyebrow">HOW WE START</span>
+      <h2>The Missed Revenue Audit</h2>
+      <p class="cta-copy">
+        Before we build anything, we run a free audit on your current marketing and sales
+        setup &mdash; showing you the 6 places revenue is leaking, and exactly how much
+        you&rsquo;re leaving on the table every month.
+      </p>
+      <div class="cta-buttons">
+        <a href="mailto:therofnetwork@gmail.com" class="pill pill-filled">Book your free 20-minute discovery call</a>
+      </div>
+      <p class="cta-fineprint">therofnetwork&#64;gmail.com &middot; &ldquo;The idea is to build something real.&rdquo;</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div class="logo">THE <span>ROF</span> NETWORK</div>
+      <ul class="footer-links">
+        <li><a href="#system">System</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#audit">Book a call</a></li>
+      </ul>
+      <div class="copyright">&copy; 2026 The ROF Network &middot; Johannesburg, South Africa</div>
+    </div>
+  </footer>
+
 </ion-content>
